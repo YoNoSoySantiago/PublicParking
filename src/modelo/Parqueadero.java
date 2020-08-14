@@ -19,19 +19,32 @@ public class Parqueadero {
 	
 	public void marcarHoraInicio(String tipoV) {
 		tipoVehiculo = tipoV;
+		
+		horaInicio   = (int)(7+Math.random()*5);
+		minutoInicio = (int)(Math.random()*60);
 		// To modify:
-		horaInicio   = 7;
+		/*horaInicio   = 7;
 		minutoInicio = 0;
+		*/		
 	}
 	
 	public String darHoraInicio() {
+		
+	
+
 		return horaInicio+":"+minutoInicio;
 	}
 	
 	public void marcarHoraFinal() {
+		
+	
+
 		// To modify:
-		horaInicio   = 12;
+		horaInicio   = (int)(12+Math.random()*10);
+		minutoInicio = (int)(Math.random()*60);
+		/*horaInicio   = 12;
 		minutoInicio = 0;
+		*/
 	}
 	
 	public String darHoraFinal() {
